@@ -256,9 +256,9 @@ export default defineComponent({
       if (index >= 0) {
         const { key, keyIndex } = getLastKeyBeforeCaret(index)
         const text = lastSearchText = getLastSearchText(index, keyIndex)
-        if (!(keyIndex < 1 || /\s/.test(getValue()[keyIndex - 1]))) {
-          return false
-        }
+        //if (!(keyIndex < 1 || /[\s\(\)\{\}\[\]]/.test(getValue()[keyIndex - 1]))) {
+        //  return false
+        //}
         if (text != null) {
           openMenu(key, keyIndex)
           searchText.value = text
@@ -281,7 +281,7 @@ export default defineComponent({
       if (keyIndex !== -1) {
         const text = getValue().substring(keyIndex + 1, caretIndex)
         // If there is a space we close the menu
-        if (!/\s/.test(text)) {
+        if (!/[\s\(\)\{\}\[\]]/.test(text)) {
           return text
         }
       }
