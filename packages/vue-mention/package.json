@@ -1,7 +1,7 @@
 {
   "name": "vue-mention",
   "description": "Mention popper for input and textarea",
-  "version": "2.0.0-alpha.3",
+  "version": "2.0.0-alpha.4",
   "author": {
     "name": "Guillaume Chau",
     "email": "guillaume.b.chau@gmail.com"
@@ -43,10 +43,10 @@
     "access": "public"
   },
   "dependencies": {
-    "textarea-caret": "^3.1.0"
+    "textarea-caret": "^3.1.0",
+    "floating-vue": "^2.0.0-beta.1"
   },
   "peerDependencies": {
-    "floating-vue": "^2.0.0-beta.1",
     "vue": "^3.2"
   },
   "devDependencies": {
@@ -71,8 +71,7 @@
     "typescript": "^4.5.4",
     "vite": "^2.7.10",
     "vue": "^3.2.26",
-    "vue-typegen": "^0.1.1",
-    "floating-vue": "^2.0.0-beta.1"
+    "vue-typegen": "^0.1.1"
   },
   "browserslist": [
     "> 1%",
