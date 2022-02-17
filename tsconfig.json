@@ -6,6 +6,7 @@
     "declaration": true,
     "lib": [
       "ES2018",
+      "ESNext",
       "DOM",
       "DOM.Iterable"
     ],
