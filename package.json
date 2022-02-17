@@ -29,7 +29,7 @@
     "prepublishOnly": "npm run lint && npm run build && npm run test",
     "lint": "eslint --ext .ts,.js,.vue src",
     "test": "cd ../test-e2e && yarn run test:e2e:run",
-    "prepare": "yarn && yarn build"
+    "prepare": "NODE_ENV=production vite build && tsc -d --emitDeclarationOnly && vue-typegen gen -s src -o dist"
   },
   "repository": {
     "type": "git",
