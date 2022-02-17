@@ -28,8 +28,7 @@
     "build": "cross-env NODE_ENV=production vite build && tsc -d --emitDeclarationOnly && vue-typegen gen -s src -o dist",
     "prepublishOnly": "npm run lint && npm run build && npm run test",
     "lint": "eslint --ext .ts,.js,.vue src",
-    "test": "cd ../test-e2e && yarn run test:e2e:run",
-    "prepare": "NODE_ENV=production vite build && tsc -d --emitDeclarationOnly && vue-typegen gen -s src -o dist"
+    "test": "cd ../test-e2e && yarn run test:e2e:run"
   },
   "repository": {
     "type": "git",
