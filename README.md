@@ -1,69 +1,10 @@
-<p align="center">
-  <a href="https://vue-mention.netlify.app/" target="_blank">
-    <img src="./packages/docs/src/.vuepress/public/vue-mention.svg" alt="logo" width="128">
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/vue-mention">
-    <img src="https://img.shields.io/npm/v/vue-mention.svg" alt="Version">
-  </a>
-  <a href="https://www.npmjs.com/package/vue-mention">
-    <img src="https://img.shields.io/npm/dm/vue-mention.svg" alt="Downloads">
-  </a>
-</p>
+<img src="../docs/src/.vuepress/public/vue-mention.svg" alt="logo" width="128">
 
 # vue-mention
 
 Mention popper for input and textarea
 
 [Documentation](https://vue-mention.netlify.app/)
-
-## Vue 3 support
-
-Install the v2 for Vue 3 support:
-
-```
-pnpm i vue-mention@next
-```
-
-You also need to install `v-tooltip` v4:
-
-```
-pnpm i v-tooltip@vue3
-```
-
-And add the default `v-tooltip` styles:
-
-```js
-import 'v-tooltip/dist/v-tooltip.css'
-```
-
-## floating-vue 1 (Vue 2)
-
-Install the special version for floating-vue v1 (for Vue 2) support:
-
-```
-pnpm i vue-mention@1.0.0-floating-vue1
-```
-
-**:warning: Use the exact version range `1.0.0-floating-vue1` otherwise you'll install `v1.1.0` which is for v-tooltip 2.**
-
-You also need to install `floating-vue` v1:
-
-```
-pnpm i floating-vue@vue2
-```
-
-And add the default `floating-vue` styles:
-
-```js
-import 'floating-vue/dist/style.css'
-```
-
-## Sponsors
-
-[![sponsors logos](https://guillaume-chau.info/sponsors.png)](https://guillaume-chau.info/sponsors)
 
 ## Quick start
 
