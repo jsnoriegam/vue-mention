@@ -21,6 +21,7 @@ export default defineConfig({
           vue: 'Vue',
           'floating-vue': 'FloatingVue',
         },
+        exports: 'named',
       },
     },
   },

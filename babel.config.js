@@ -1,5 +1,1 @@
-module.exports = {
-  presets: [
-    [require('@babel/preset-env'), { modules: false }],
-  ],
-}
+export const presets = [[require("@babel/preset-env"), { modules: false }]];

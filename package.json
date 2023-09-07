@@ -1,7 +1,7 @@
 {
   "name": "vue-mention",
   "description": "Mention popper for input and textarea",
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-beta.1",
   "author": {
     "name": "Guillaume Chau",
     "email": "guillaume.b.chau@gmail.com"
@@ -52,6 +52,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
+    "@types/node": "^20.5.9",
     "@types/textarea-caret": "^3.0.1",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
     "@typescript-eslint/parser": "^5.6.0",
