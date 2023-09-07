@@ -1,62 +1,24 @@
-<img src="../docs/src/.vuepress/public/vue-mention.svg" alt="logo" width="128">
+---
+home: true
+heroImage: /vue-mention.svg
+heroText: vue-mention
+tagline: Easy mentions for Vue.js
+actionText: Get Started →
+actionLink: /guide/
+features:
+- title: Simple & Minimalist
+  details: Easy to get started, minimal weight
+- title: Flexible
+  details: Flexible enough for your use case
+- title: Vue-Powered
+  details: Use the full power of Vue with props, events and slots
+footer: MIT Licensed | Copyright © 2020-present Guillaume Chau
+---
 
-# vue-mention
 
-Mention popper for input and textarea
+## Demo
 
-[Documentation](https://vue-mention.netlify.app/)
-
-## Vue 3 support
-
-Install the v2 for Vue 3 support:
-
-```
-pnpm i vue-mention@next
-```
-
-You also need to install `floating-vue`:
-
-```
-pnpm i floating-vue
-```
-
-And add the default `floating-vue` styles:
-
-```js
-import 'floating-vue/dist/style.css'
-```
-
-## floating-vue 1 (Vue 2)
-
-Install the special version for floating-vue v1 (for Vue 2) support:
-
-```
-pnpm i vue-mention@1.0.0-floating-vue1
-```
-
-**:warning: Use the exact version range `1.0.0-floating-vue1` otherwise you'll install `v1.1.0` which is for v-tooltip 2.**
-
-You also need to install `floating-vue` v1:
-
-```
-pnpm i floating-vue@vue2
-```
-
-And add the default `floating-vue` styles:
-
-```js
-import 'floating-vue/dist/style.css'
-```
-
-## Sponsors
-
-<p align="center">
-  <a href="https://guillaume-chau.info/sponsors/" target="_blank">
-    <img src='https://akryum.netlify.app/sponsors.svg'/>
-  </a>
-</p>
-
-## Quick start
+<Demo />
 
 ```vue
 <script>
@@ -111,6 +73,10 @@ export default {
     onOpen (key) {
       this.items = key === '@' ? users : issues
     },
+
+    onApply (item, key, replacedWith) {
+      console.log(item, `has been replaced with ${replacedWith}`)
+    }
   },
 }
 </script>
@@ -122,6 +88,7 @@ export default {
     offset="6"
     insert-space
     @open="onOpen"
+    @apply="onApply"
   >
     <textarea
       v-model="text"
@@ -155,3 +122,11 @@ export default {
   </Mentionable>
 </template>
 ```
+
+## Sponsors
+
+<p align="center">
+  <a href="https://guillaume-chau.info/sponsors/" target="_blank">
+    <img src='https://akryum.netlify.app/sponsors.svg'/>
+  </a>
+</p>
